@@ -48,6 +48,11 @@ header {
   display: flex;
   align-items: center;
   color: var(--button-color);
+  transition: all var(--slow);
+}
+
+.header-left a:first-child:hover {
+  opacity: 0.7;
 }
 
 .header-left a i {
@@ -60,6 +65,11 @@ header {
 
 .header-left span {
   font-size: 3rem;
+  transition: all var(--slow);
+}
+
+.header-left span:hover {
+  text-decoration: underline;
 }
 
 .header-left .help {
@@ -91,6 +101,12 @@ header {
   border-radius: 6px;
   font-size: 1.3rem;
   cursor: pointer;
+  transition: all var(--fast);
+}
+
+.sign-in:hover {
+  background-color: var(--button-color);
+  color: var(--text-color);
 }
 
 .header-search {
@@ -133,7 +149,8 @@ section .question {
   background-color: var(--button-color);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-top: 4rem;
+  padding-top: 10rem;
+  padding-left: 5rem;
 }
 .item {
   display: flex;
