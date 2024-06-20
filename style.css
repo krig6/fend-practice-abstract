@@ -8,6 +8,7 @@
   padding: 0;
   outline: none;
   border: none;
+  text-decoration: none;
 }
 
 body {
@@ -38,17 +39,17 @@ header {
 .header-left {
   display: flex;
   align-items: center;
-  color: white;
-  gap: 1rem;
+  color: var(--button-color);
+  gap: 0.5rem;
 }
 
-.header-left,
-.logo {
+.header-left a {
   display: flex;
   align-items: center;
+  color: var(--button-color);
 }
 
-.logo i {
+a i {
   font-size: 3rem;
 }
 
