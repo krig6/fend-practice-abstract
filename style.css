@@ -51,10 +51,6 @@ header {
   transition: all var(--slow);
 }
 
-.header-left a:first-child:hover {
-  opacity: 0.7;
-}
-
 .header-left a i {
   font-size: 3rem;
 }
@@ -66,10 +62,6 @@ header {
 .header-left span {
   font-size: 3rem;
   transition: all var(--slow);
-}
-
-.header-left span:hover {
-  text-decoration: underline;
 }
 
 .header-left .help {
@@ -104,11 +96,6 @@ header {
   transition: all var(--fast);
 }
 
-.sign-in:hover {
-  background-color: var(--button-color);
-  color: var(--text-color);
-}
-
 .header-search {
   width: 250px;
   height: 3rem;
@@ -138,10 +125,6 @@ section .question {
   color: var(--text-color);
   padding: 1rem;
   border: 1px solid var(--text-color);
-}
-
-.section-search:hover {
-  border: 1px solid var(--secondary-color);
 }
 
 .content {
@@ -212,10 +195,6 @@ ul h4 {
   transition: all var(--fast);
 }
 
-ul a:hover {
-  text-decoration: underline;
-}
-
 .double,
 .copyright {
   color: var(--button-color);
@@ -240,4 +219,27 @@ ul a:hover {
 
 .double .nav-items {
   margin-bottom: 1rem;
+}
+
+/* Hover animations */
+
+.header-left a:first-child:hover {
+  opacity: 0.7;
+}
+
+.header-left span:hover {
+  text-decoration: underline;
+}
+
+.sign-in:hover {
+  background-color: var(--button-color);
+  color: var(--text-color);
+}
+
+.section-search:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+ul a:hover {
+  text-decoration: underline;
 }
