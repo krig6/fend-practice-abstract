@@ -126,3 +126,47 @@ section .question {
 .section-search:hover {
   border: 1px solid var(--secondary-color);
 }
+
+.content {
+  height: 100vh;
+  background-color: var(--button-color);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 4rem;
+}
+.item {
+  display: flex;
+  min-height: 115px;
+  width: 80%;
+  justify-self: center;
+  align-self: start;
+  gap: 1rem;
+}
+
+.item-text {
+  display: flex;
+  gap: 0.8rem;
+  flex-direction: column;
+}
+
+.item .icon i {
+  font-size: 5.5rem;
+  color: var(--secondary-color);
+}
+
+.item-text i,
+.item-text p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.item-text a {
+  color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.item-text h4 {
+  font-size: 1.7rem;
+}
