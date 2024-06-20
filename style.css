@@ -6,6 +6,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
 }
 
 body {
@@ -30,12 +32,14 @@ header {
   display: flex;
   justify-content: space-between;
   background-color: var(--text-color);
+  padding: 1rem 2rem;
 }
 
 .header-left {
   display: flex;
   align-items: center;
   color: white;
+  gap: 1rem;
 }
 
 .header-left,
@@ -58,4 +62,39 @@ header {
 
 .header-left .help {
   font-size: 1.7rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.submit {
+  height: 3rem;
+  padding-inline: 3rem;
+  border: 1px solid var(--button-color);
+  background-color: var(--text-color);
+  color: var(--button-color);
+  border-radius: 6px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.sign-in {
+  height: 3rem;
+  padding-inline: 2rem;
+  background-color: var(--secondary-color);
+  color: var(--button-color);
+  border-radius: 6px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.header-search {
+  width: 250px;
+  height: 3rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  padding: 0.8rem;
 }
