@@ -9,6 +9,7 @@
   outline: none;
   border: none;
   text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -49,7 +50,7 @@ header {
   color: var(--button-color);
 }
 
-a i {
+.header-left a i {
   font-size: 3rem;
 }
 
@@ -169,4 +170,57 @@ section .question {
 
 .item-text h4 {
   font-size: 1.7rem;
+}
+
+footer {
+  background-color: var(--text-color);
+  height: 450px;
+  padding: 3rem 7rem;
+}
+
+footer nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+ul h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+ul a,
+ul h4 {
+  color: var(--button-color);
+  transition: all var(--fast);
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+.double,
+.copyright {
+  color: var(--button-color);
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  grid-row: 1/-1;
+  grid-column: 5/-1;
+}
+
+.copyright i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.copyright span {
+  font-size: 1.2rem;
+}
+
+.double .nav-items {
+  margin-bottom: 1rem;
 }
