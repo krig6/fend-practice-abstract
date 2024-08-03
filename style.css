@@ -223,6 +223,11 @@ ul h4 {
 
 /* Hover animations */
 
+.submit:hover {
+  color: var(--text-color);
+  background-color: var(--button-color);
+}
+
 .header-left a:first-child:hover {
   opacity: 0.7;
 }
