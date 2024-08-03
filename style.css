@@ -248,3 +248,7 @@ ul h4 {
 ul a:hover {
   text-decoration: underline;
 }
+
+.item-text a:hover span {
+  text-decoration: underline;
+}
